@@ -7,15 +7,33 @@ import model.Coro;
 import model.Cuarteto;
 import model.Romancero;
 
-
+/**
+ * Clase Principal
+ * @author sergi
+ * @since 10-03-2023
+ */
 public class Principal {
 
-	
+	/**
+	 * Esta constante indica un número de tipo entero para que inicialice el Controlador COAC
+	 */
 	public static final int TOTAL = 20;
-	
+	/**
+	 * Inicialización del Controlador COAC
+	 * @see COAC
+	 */
 	public static COAC coac = new COAC(TOTAL);
 	
-	
+	/**
+	 * Creación de diferentes Objetos e inicializacion de los atributos y realización de pruebas en el proyecto
+	 * Inscripción de los diferentes Objetos en COAC
+	 * Llamar al método para gestionar la vista del Programa
+	 * @see Chirigota
+	 * @see Comparsa
+	 * @see Coro
+	 * @see Cuarteto
+	 * @see Romancero
+	 */
 	public static void main(String[] args) {
 		
 		Chirigota o1 = new Chirigota();
@@ -47,7 +65,7 @@ public class Principal {
 		coac.inscribir_agrupacion(o7);
 		
 		Romancero o9 = new Romancero();
-		o9.setNombre("Dos Hermanos y Un Ídolo");
+		o9.setNombre("Dos Hermanos y Un Idolo");
 		o9.setAutorLetra("Manolo Puerto Tomás");
 		o9.setAutorMusica("Joaquin Sanchez");
 		o9.setAutor("Daniel Puerto");

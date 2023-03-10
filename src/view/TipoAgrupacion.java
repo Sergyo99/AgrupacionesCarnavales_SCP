@@ -11,9 +11,9 @@ public class TipoAgrupacion {
 
 	private static void mostrarmenuTipoAgrupaciones() {
 		Util.escribirLn("\n");
-		Util.escribirLn("┌───────────────────────┐");
-		Util.escribirLn("│ TIPOS DE AGRUPACIONES │");
-		Util.escribirLn("└───────────────────────┘");
+		Util.escribirLn("                         ");
+		Util.escribirLn("  TIPOS DE AGRUPACIONES  ");
+		Util.escribirLn("                         ");
 		Util.escribirLn("  1. Coro.");
 		Util.escribirLn("  2. Comparsa.");
 		Util.escribirLn("  3. Chirigota.");
