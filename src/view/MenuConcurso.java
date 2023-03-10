@@ -4,9 +4,9 @@ public class MenuConcurso {
 
 	private static void mostrarMenuConcurso() {
 		Util.escribir("\n");
-		Util.escribir("                        ");
-		Util.escribir("  GESTION DEL CONCURSO  ");
-		Util.escribir("                        ");
+		Util.escribir("┌──────────────────────┐");
+		Util.escribir("│ GESTION DEL CONCURSO │");
+		Util.escribir("└──────────────────────┘");
 		Util.escribir("Concurso:");
 		Util.escribir("  1. Va camino del Falla.");
 		Util.escribir("  2. Hacen el Tipo.");
