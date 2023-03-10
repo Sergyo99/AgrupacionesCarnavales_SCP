@@ -4,9 +4,9 @@ public class MenuParticipante {
 
 	private static void mostrarMenuIntegrantes() {
 		Util.escribir("\n");
-		Util.escribir("                            ");
-		Util.escribir("  GESTION DE PARTICIPANTES  ");
-		Util.escribir("                            ");
+		Util.escribir("┌──────────────────────────┐");
+		Util.escribir("│ GESTION DE PARTICIPANTES │");
+		Util.escribir("└──────────────────────────┘");
 		Util.escribir("  1. Añadir un participante.");
 		Util.escribir("  2. Borrar un participante.");
 		Util.escribir("  3. Editar los datos de un participante.");
