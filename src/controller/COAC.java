@@ -14,16 +14,39 @@ import model.SortByAutor;
 import model.SortByAutorMusica;
 import model.SortIntegranteNombre;
 
+/**
+ * Clase COAC: Se utiliza para crear COAC (Concurso de Agrupaciones Carnavalescas) y la gestión de la misma
+ * @author sergi
+ * @since 10-03-2023
+ */
 public class COAC {
 	
+	/**
+	 * Constante que indica por defecto el número máximo de Agrupaciones de un objeto COAC
+	 */
 	private static final int AGRUPACIONESDEFECTO = 10;
 	
+	/**
+	 * Constante que indica por defecto el número máximo de Integrantes de un objeto COAC
+	 */
 	private static final int INTEGRANTESDEFECTO = 20;
 	
+	/**
+	 * Atributo Agrupaciones, array de las diferentes Agrupaciones que compiten en el Concurso
+	 */
 	private Agrupacion[] agrupacion;
 	
+	/**
+	 * Atributo Integrantes, array de los diferentes Integrantes que compiten en el Concurso
+	 */
 	private Integrante[] integrante;
 	
+	/**
+	 * Constructor con un parámetro
+	 * Crea el objeto COAC especificando el tamaño máximo de agrupaciones a guardar en el array
+	 * Inicializa el array de integrantes con el número por defecto
+	 * @param total
+	 */
 	public COAC(int total) {
 		agrupacion = new Agrupacion[AGRUPACIONESDEFECTO];
 		integrante = new Integrante[INTEGRANTESDEFECTO];
@@ -45,6 +68,12 @@ public class COAC {
 		this.integrante = integrantes;
 	}
 	
+	/**
+	 * Inscribe una Agrupación en el Array Agrupaciones
+	 * Comprueba que la Agrupación no exista en el array y si no existe la añade
+	 * @param a
+	 * @return boolean
+	 */
 	public boolean inscribir_agrupacion(Agrupacion a) {
 		boolean add = false;
 
@@ -60,6 +89,12 @@ public class COAC {
 
 	}
 	
+	/**
+	 * Elimina una Agrupación del Array Agrupaciones
+	 * Comprueba que la Agrupación exista en el array y si existe la elimina
+	 * @param a
+	 * @return boolean
+	 */
 	public boolean eliminar_agrupacion(Agrupacion a) {
 		boolean del = false;
 
@@ -75,6 +110,12 @@ public class COAC {
 
 	}
 	
+	/**
+	 * Inscribe un Participante en el Array Participantes
+	 * Comprueba que el Participante no exista en el array y si no existe lo añade
+	 * @param a
+	 * @return boolean
+	 */
 	public boolean inscribir_participante(Integrante a) {
 		boolean added = false;
 		boolean isOK = false;
@@ -98,6 +139,12 @@ public class COAC {
 		return added;
 	}
 	
+	/**
+	 * Elimina un Participante del Array Participantes
+	 * Comprueba que el Participante exista en el array y si existe la elimina
+	 * @param a
+	 * @return boolean
+	 */
 	public boolean eliminar_participante(Integrante a) {
 		boolean deleted = false;
 		for (int d = 0; d < integrante.length; d++) {
