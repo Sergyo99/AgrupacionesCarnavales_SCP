@@ -7,47 +7,50 @@ import model.Coro;
 import model.Cuarteto;
 import model.Romancero;
 
+
 public class Principal {
 
+	
 	public static final int TOTAL = 20;
 	
 	public static COAC coac = new COAC(TOTAL);
 	
+	
 	public static void main(String[] args) {
 		
 		Chirigota o1 = new Chirigota();
-		o1.setNombre("Este año venimos con Esperanza");
-		o1.setAutorLetra("Moisés y José Antonio");
-		o1.setAutorMusica("José Antonio");
-		o1.setAutor("José Antonio");
+		o1.setNombre("La Esperanza de Sevilla");
+		o1.setAutorLetra("Miguel y Juan Antonio");
+		o1.setAutorMusica("Juan Antonio");
+		o1.setAutor("Juan Antonio");
 		coac.inscribir_agrupacion(o1);
 		
 		Comparsa o3 = new Comparsa();
-		o3.setNombre("El Andalú");
-		o3.setAutorLetra("José Manuel");
-		o3.setAutorMusica("Ramón");
-		o3.setAutor("Ramón");
+		o3.setNombre("Er Andaluh");
+		o3.setAutorLetra("Antonio Manuel");
+		o3.setAutorMusica("Manolito");
+		o3.setAutor("Manolito");
 		coac.inscribir_agrupacion(o3);
 		
 		Coro o5 = new Coro();
-		o5.setNombre("La Voz");
-		o5.setAutorLetra("Luis Manuel y Juan Manuel");
-		o5.setAutorMusica("Luis Manuel y Juan Manuel");
-		o5.setAutor("Laura Rivero");
+		o5.setNombre("Las Voces de Cádiz");
+		o5.setAutorLetra("Andrés y Joselito");
+		o5.setAutorMusica("Alvaro y Guillermo Santiesteban");
+		o5.setAutor("Laura Hornero, Javier Santos y Joaquín Salas");
 		coac.inscribir_agrupacion(o5);
 		
 		Cuarteto o7 = new Cuarteto();
-		o7.setNombre("Los Vigilantes de la Laja");
-		o7.setAutorLetra("Manuel y Francisco Joshua");
-		o7.setAutorMusica("Alejandro");
-		o7.setAutor("LuManuelcia");
+		o7.setNombre("El Cuarteto Bollullero de Oro");
+		o7.setAutorLetra("Manuel Fernandez y Francisco José");
+		o7.setAutorMusica("Alejandro Casado");
+		o7.setAutor("María José Perea");
 		coac.inscribir_agrupacion(o7);
 		
 		Romancero o9 = new Romancero();
-		o9.setNombre("Dia a dia");
-		o9.setAutorLetra("Tomás");
-		o9.setAutorMusica("Joaquin");
-		o9.setAutor("Manolo");
+		o9.setNombre("Dos Hermanos y Un Ídolo");
+		o9.setAutorLetra("Manolo Puerto Tomás");
+		o9.setAutorMusica("Joaquin Sanchez");
+		o9.setAutor("Daniel Puerto");
 		coac.inscribir_agrupacion(o9);
 		
 		gestionPrograma();
